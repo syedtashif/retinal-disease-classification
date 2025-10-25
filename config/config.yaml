@@ -1,0 +1,66 @@
+# Model Configuration
+model:
+  num_classes: 20
+  embed_dim: 512
+  num_vit_layers: 4
+  num_heads: 8
+  mlp_dim: 1024
+  dropout: 0.1
+
+# Training Configuration
+training:
+  img_size: 384
+  batch_size: 16
+  epochs: 20
+  learning_rate: 0.0001
+  patience: 10
+  num_workers: 2
+
+# Loss Configuration
+loss:
+  type: 'focal'  # Options: 'focal' or 'poly1'
+  focal:
+    alpha: 1
+    gamma: 2
+  poly1:
+    epsilon: 1.0
+
+# Scheduler Configuration
+scheduler:
+  mode: 'max'
+  factor: 0.5
+  patience: 3
+
+# Data Paths
+data:
+  train_csv: 'data/train_data.csv'
+  test_csv: 'data/test_data.csv'
+  images_dir: 'data/images/'
+
+# Disease Classes
+disease_names:
+  - 'DR'
+  - 'NORMAL'
+  - 'MH'
+  - 'ODC'
+  - 'TSLN'
+  - 'ARMD'
+  - 'DN'
+  - 'MYA'
+  - 'BRVO'
+  - 'ODP'
+  - 'CRVO'
+  - 'CNV'
+  - 'RS'
+  - 'ODE'
+  - 'LS'
+  - 'CSR'
+  - 'HTR'
+  - 'ASR'
+  - 'CRS'
+  - 'OTHER'
+
+# Output Configuration
+output:
+  model_save_path: 'best_model.pth'
+  log_dir: 'logs'

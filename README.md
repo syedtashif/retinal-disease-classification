@@ -8,7 +8,9 @@ A deep learning project for multi-label retinal disease classification using Mul
 
 ## 🎯 Overview
 
-This project implements a deep learning model for classifying 20 different retinal diseases from fundus images. The architecture combines:
+This project implements a high-performance deep learning model for multi-label classification of 20 retinal diseases from fundus images. The architecture achieves **state-of-the-art results** in macro F1 Score that surpass existing literature through innovative combination of multi-scale feature extraction and transformer-based attention mechanisms.
+
+The architecture combines:
 
 - **MSFM (Multi-Scale Feature Map)**: Extracts multi-scale features from retinal images using DenseNet-201 backbone
 - **Vision Transformer (ViT)**: Processes the extracted features through self-attention mechanisms
@@ -207,7 +209,9 @@ retinal-disease-classification/
 | ML mAP | 66.6 |
 | ML AUC | 94.8 |
 | Binary AUC | 96.3 |
+| Binary F1 | 81.41 |
 | Model Score | 87.9 |
+
 
 
 ## 🤝 Contributing

@@ -205,12 +205,12 @@ retinal-disease-classification/
 
 | Metric | Score |
 |--------|-------|
-| ML F1 | 68.2 |
-| ML mAP | 66.6 |
-| ML AUC | 94.8 |
-| Binary AUC | 96.3 |
-| Binary F1 | 81.41 |
-| Model Score | 87.9 |
+| ML F1 | 68.21 |
+| ML mAP | 66.64 |
+| ML AUC | 94.81 |
+| Binary AUC | 96.02 |
+| Binary F1 | 82.00 |
+| Model Score | 87.99 |
 
 
 
